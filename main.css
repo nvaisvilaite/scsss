@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+body {
+  background-color: grey;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.container ul li {
+  line-height: 30px;
+}
+
+.container ul li:nth-child(2) {
+  color: #73829e;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.container ul li:nth-child(1) {
+  color: #73829e;
+  line-height: 0;
+}
+
+.container ul li:nth-child(3) {
+  font-weight: 900;
+}
+
+.container .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+  background-color: white;
+  -webkit-box-shadow: -1px 1px 20px 1px;
+          box-shadow: -1px 1px 20px 1px;
+  color: #080f1a;
+}
+
+.container .pricing .block {
+  width: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  border-left: 1px solid grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container .pricing .block h1 {
+  background-color: #f4f6fc;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container .pricing .block h2 {
+  font-weight: 600;
+}
+
+.container .pricing .block p {
+  font-size: 14px;
+}
+
+.container .pricing .block button {
+  background: white;
+  border: 1px solid #303ca5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #303ca5;
+  border-radius: 5px;
+  font-size: 15px;
+}
+/*# sourceMappingURL=main.css.map */

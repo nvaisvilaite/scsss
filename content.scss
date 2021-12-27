@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+$myWidth: 200px;
+$textColor1: #080f1a;
+$textColor2: #73829e;
+$buttonColor: 1px solid #303ca5;
+$buttonText:  #303ca5;
+$priceBackground: #f4f6fc;
+$myFont: 'Nunito Sans', sans-serif;
+
+@mixin button {
+    background: white;
+    border: $buttonColor;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $buttonText;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+body {
+    background-color: grey;
+}
+.container {
+    display: flex;
+    font-family: $myFont;
+   
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            line-height: 30px;
+        }
+        li:nth-child(2) {
+            color: $textColor2;
+            padding-top: 30px;
+            padding-bottom: 10px;
+          }
+          li:nth-child(1) {
+            color: $textColor2;
+            line-height: 0;
+          }
+          li:nth-child(3) {
+            font-weight: 900;
+
+          }
+    }
+    .pricing {
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+    top: 150px;
+    background-color: white;
+   
+    box-shadow: -1px 1px 20px 1px;
+    color: $textColor1;
+   
+
+        
+        
+        .block {
+            width: 200px;
+            padding-left: 40px;
+            padding-right: 40px;
+            text-align: center;
+            border-left: 1px solid grey;
+            padding-top: 20px;
+        padding-bottom: 20px; 
+
+            h1 {
+                background-color: $priceBackground;
+                border-radius: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            h2 {
+                
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px;
+            }
+            button {
+                @include button;
+    
+
+            }
+           
+        }
+    }
+}
